@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #647c90;
+  --secondary-color: #e2ded0;
+  --ternay-color: #4e4f50;
+  --final-color: #746c70;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(../img/login_image.jpg);
+  background-size: cover; /* Ensures the image covers the entire div */
+  background-position: center; /* Centers the image within the div */
+}
+
+.container {
+  width: 100%;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+.container h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.user-input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background: var(--secondary-color);
+  margin: 50px 0;
+  border-radius: 40px;
+}
+
+/* General input styles */
+.user-input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0 45px 0 20px; /* Added padding-right to prevent overlap */
+  border-radius: 40px; /* Ensure rounded corners */
+}
+
+/* Autofill styles */
+input:-webkit-autofill {
+  background:var(--secondary-color) !important;
+  color: var(--final-color);
+  border-radius: 40px;
+  -webkit-box-shadow: 0 0 0px 1000px #e2ded0 inset !important;
+  -webkit-text-fill-color: #4e4f50 !important;
+}
+
+input:-webkit-autofill:focus {
+  background: #e2ded0 !important;
+  color: #4e4f50;
+  border-radius: 40px;
+  -webkit-box-shadow: 0 0 0px 1000px #e2ded0 inset !important;
+  -webkit-text-fill-color: #4e4f50 !important;
+}
+
+input:-webkit-autofill:hover {
+  background: #e2ded0 !important;
+  color: #4e4f50;
+  border-radius: 40px;
+  -webkit-box-shadow: 0 0 0px 1000px #e2ded0 inset !important;
+  -webkit-text-fill-color: #4e4f50 !important;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  color: #4e4f50;
+  z-index: 1;
+}
+
+.user-input-box input::placeholder {
+  color: #4e4f50;
+  opacity: 0.7;
+}
+
+.container .rememberForget {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px; /* Corrected from '14.5 px' */
+  margin: -15px 0 25px;
+}
+
+.rememberForget label input {
+  accent-color: white;
+  margin: 3px;
+}
+
+.rememberForget a {
+  color: white;
+  text-decoration: none;
+}
+
+.rememberForget a:hover {
+  text-decoration: underline;
+}
+
+.form-submit-button input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.form-submit-button input:hover {
+  background: var(--final-color);
+  color: rgba(255, 255, 255);
+}
+
+.container .registerLink {
+  font-size: 14.5px; /* Corrected from '14.5 px' */
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.registerLink p a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.registerLink p a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styles */
+
+@media (max-width: 360px) {
+  .rememberForget {
+    flex-direction: column;
+  }
+
+  .rememberForget span,
+  .rememberForget a {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+}

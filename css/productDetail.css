@@ -1,0 +1,199 @@
+.product-container {
+  max-width: 80%;
+  margin: auto;
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(193, 34, 34, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+:root {
+  --primary-color: #647c90;
+  --secondary-color: #e2ded0;
+  --ternay-color: #4e4f50;
+  --final-color: #746c70;
+}
+
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+.stars {
+  display: flex;
+  gap: 2px; /* Reduced gap between stars */
+  flex-direction: row-reverse;
+}
+
+.stars input[type="radio"] {
+  display: none;
+}
+
+.stars label[for^="star"] {
+  font-size: 2em;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.stars input[type="radio"]:checked ~ label[for^="star"] {
+  color: #ffd700;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.discounted-price {
+  color: #e60000;
+  font-size: 20px;
+}
+
+.product-image img {
+  max-width: 43%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product-details {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.product-details h1 {
+  font-size: 1.8em;
+  margin: 0;
+  color: #333;
+}
+
+.price {
+  font-size: 1.5em;
+  color: #b12704;
+  margin: 15px 0;
+}
+
+.description {
+  font-size: 1.2em;
+  margin: 10px 0 20px;
+  color: #555;
+}
+
+.product-details h2 {
+  font-size: 1.6em;
+  margin: 20px 0 10px;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.features {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.features h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #1e1b1b;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 10px 0;
+}
+
+ul li {
+  font-size: 1.1em;
+  margin: 5px 0;
+  color: #555;
+}
+
+#size-dropdown {
+  width: 20%;
+  padding: 10px;
+  font-size: 1.1em;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #333;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.size-chart {
+  width: 70%;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.size-chart th,
+.size-chart td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 1em;
+  color: #555;
+}
+
+.size-chart th {
+  background-color: #f2f2f2;
+  font-weight: 600;
+}
+
+.buy-now {
+  background-color: #ff7f50;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 14px;
+  border: #333;
+  border-radius: 1.5em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-now:hover {
+  background-color: #a02002;
+}
+
+@media (max-width: 480px) {
+  #size-dropdown {
+    width: 50%;
+    padding: 10px;
+    font-size: 1.1em;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #333;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+}

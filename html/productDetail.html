@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Welcome to SoleInvest, your number one source for all things fashion. We're dedicated to providing you the very best of products, with an emphasis on quality, customer service, and uniqueness.">
+    <meta name="keywords" content="e-commerce, fashion, shop online, best prices, quality products, reviews, product details,discount">
+    <meta name="author" content="SoleInvest">
+    <link rel="canonical" href="http://www.example.com/home.html">
+    <meta property="og:title" content="SoleInvest - Home">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/productDetail.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="shortcut icon" type="image/png" href="../img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Banner Section -->
+    <!-- <div class="discount-banner">
+        <p>25% Discount Sale Today!</p>
+    </div> -->
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="home.html" class="logo-link">
+                    <img class="logo" src="../img/home/logo.jpg" alt="logo">
+                    <h1>SoleMates</h1>
+                </a>
+            </div>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="home.html"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="products.html"><i class="fa fa-shopping-cart"></i> Products</a></li>
+                    <li><a href="about.html"><i class="fa fa-info"></i> About Us</a></li>
+                    <li><a href="contact.html"><i class="fa fa-phone"></i> Contact</a></li>
+                    <li><a href="login.html"><i class="fa fa-sign-in"></i> Login</a></li>
+                    <li>
+                        <a href="register.html" class="register-btn">
+                            <i class="fa fa-user-plus" aria-hidden="true"></i> Register
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </header>
+
+    <br>
+    <!--Product details page-->
+    <div class="product-container">
+        <div class="product-details">
+            <h1>Nike Panda</h1>
+            <br>
+            <div class="product-image">
+                <img src="../img/Dunk.jpg" alt="Classic Leather Sneakers">
+            </div>
+
+            <span class="original-price">$55.99</span>
+            <span class="discounted-price">$40.99</span>
+            <span>&nbsp;</span>
+            <button class="buy-now">Buy Now</button>
+
+            <p class="description">
+                Step up your style game with our Classic Sneakers. Crafted from premium quality leather, these sneakers
+                offer both durability and elegance. Perfect for casual outings or a night out, these versatile shoes are
+                a
+                must-have in your wardrobe.
+            </p>
+            <h2>Features:</h2>
+            <ul>
+                <li> <b>Material:</b>: 100% Genuine Leather</li>
+                <li><b>Color:</b> Available in Black, White, and Brown</li>
+                <li><b>Sole:</b> Rubber for enhanced grip and comfort</li>
+                <li><b>Lining:</b> Soft fabric for maximum comfort</li>
+                <li><b>Closure:</b> Lace-up</li>
+            </ul>
+
+            <!--Sizes dropdown section-->
+
+            <h2>Sizing:</h2>
+            <p>Available Sizes:</p>
+            <select id="size-dropdown">
+                <option value="6">6 </option>
+                <option value="7">7 </option>
+                <option value="8">8 </option>
+                <option value="9">9 </option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12 </option>
+            </select>
+            <h2>Size Chart:</h2>
+
+            <!--Table for size chart section-->
+            <table class="size-chart">
+                <tr>
+                    <th>Size</th>
+                    <th>Foot Length (inches)</th>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>9.2</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>9.6</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>10.2</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>10.6</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>11</td>
+                </tr>
+
+            </table>
+
+            <h2>Reviews</h2>
+            <form action="home.html" method="get">
+                <div class="form-group">
+                    <textarea id="review" name="review" rows="5" placeholder="Write a review" required></textarea>
+                    <div class="stars">
+                        <input type="radio" id="star5" name="rating" value="5">
+                        <label for="star5" title="5 stars">&#9733;</label>
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4" title="4 stars">&#9733;</label>
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3" title="3 stars">&#9733;</label>
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2" title="2 stars">&#9733;</label>
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1" title="1 star">&#9733;</label>
+                    </div>
+                    <button type="submit" class="submit-button">Submit Review</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <section class="footer">
+            <div class="footer-row">
+                <div class="footer-column">
+                    <h4>Info</h4>
+                    <ul class="links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#customer-testimonals">Customers</a></li>
+                        <li><a href="#our-services">Service</a></li>
+                        <li><a href="#featured">Collection</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Explore</h4>
+                    <ul class="links">
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Best Sellers</a></li>
+                        <li><a href="#">Men's Shoes</a></li>
+                        <li><a href="#">Women's Shoes</a></li>
+                        <li><a href="#">Kids' Shoes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul class="links">
+                        <li><a href="#">Customer Agreement</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#customer-testimonals">Testimonials</a></li>
+                        <li><a href="#">Media Kit</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Connect With Us</h4>
+                    <p>
+                        Follow our pages for a weekly dose
+                        of news, updates, helpful tips, and
+                        exclusive offers.
+                    </p>
+                    <div class="icons">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://x.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SoleMates. All rights reserved.</p>
+            </div>
+        </section>
+    </footer>
+    <script src="../js/homepage.js" defer></script>
+</body>
+
+</html>

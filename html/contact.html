@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <!-- SEO tags -->
+  <meta name="description"
+    content="Welcome to SoleMates, contact page where you know about our business hours and contact us for any queries.">
+  <meta name="keywords" content="e-commerce, fashion, shop online, best prices, quality products, contact us">
+  <meta name="author" content="SoleMates">
+
+  <!-- styles link -->
+
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/contact.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="shortcut icon" type="image/png" href="../img/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="header-container">
+      <div class="logo-container">
+        <a href="home.html" class="logo-link">
+          <img class="logo" src="../img/home/logo.jpg" alt="logo">
+          <h1>SoleMates</h1>
+        </a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="home.html"><i class="fa fa-home"></i> Home</a></li>
+          <li><a href="products.html"><i class="fa fa-shopping-cart"></i> Products</a></li>
+          <li><a href="about.html"><i class="fa fa-info"></i> About Us</a></li>
+          <li><a href="contact.html"><i class="fa fa-phone"></i> Contact</a></li>
+          <li><a href="login.html"><i class="fa fa-sign-in"></i> Login</a></li>
+          <li>
+            <a href="register.html" class="register-btn">
+              <i class="fa fa-user-plus" aria-hidden="true"></i> Register
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+
+
+  <section class="contact-us">
+    <div class="contactlabel">
+      <h2>Contact Us</h2>
+      <div class="cucontainer">
+        <div class="cuform">
+          <form id="contactForm" action="home.html" onsubmit="return showCaptcha(event)" method="get">
+            <div class="form-group">
+              <label for="fname">First Name:</label>
+              <input type="text" id="fname" name="fname" required>
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name:</label>
+              <input type="text" id="lname" name="lname" required>
+            </div>
+            <div class="form-group">
+              <label for="lemail">Email:</label>
+              <input type="email" id="lemail" name="lemail" required>
+            </div>
+            <div class="form-group">
+              <label for="lmessage">Message:</label>
+              <textarea id="lmessage" name="lmessage" style="height: 10em;" required></textarea>
+            </div>
+            <div class="form-group " id="captcha-container">
+              <div class="g-recaptcha" data-sitekey="6LewchEqAAAAAMiPM8qP0FPjgEU7OjJiN8T3Iebz"></div>
+            </div>
+            <div class="form-group">
+              <button type="submit">Send Message</button>
+            </div>
+          </form>
+        </div>
+        <div class="map-container">
+          <div id="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5760.283645239754!2d-79.33141269999999!3d43.7906701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d3abb6a894e9%3A0x57b24d8a6fd0bcb9!2s106-50%20Bickerton%20Crescent%2C%20North%20York%2C%20ON%20M2J%203T1!5e0!3m2!1sen!2sca!4v1721431767263!5m2!1sen!2sca"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="cta">
+        <a href="mailto:support_solemates@gmail.com">Email Us</a>
+        <a href="tel:+1234567890">Call Us</a>
+      </div>
+      <div>
+        <h3>Buisness hours</h3>
+        <p>Monday to Friday - 10 AM to 8 PM</p>
+        <p>Saturday to Sunday - Closed</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+
+  <footer>
+    <section class="footer">
+      <div class="footer-row">
+        <div class="footer-column">
+          <h4>Info</h4>
+          <ul class="links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#customer-testimonals">Customers</a></li>
+            <li><a href="#our-services">Service</a></li>
+            <li><a href="#featured">Collection</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Explore</h4>
+          <ul class="links">
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Best Sellers</a></li>
+            <li><a href="#">Men's Shoes</a></li>
+            <li><a href="#">Women's Shoes</a></li>
+            <li><a href="#">Kids' Shoes</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Legal</h4>
+          <ul class="links">
+            <li><a href="#">Customer Agreement</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#customer-testimonals">Testimonials</a></li>
+            <li><a href="#">Media Kit</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Connect With Us</h4>
+          <p>
+            Follow our pages for a weekly dose
+            of news, updates, helpful tips, and
+            exclusive offers.
+          </p>
+          <div class="icons">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://x.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 SoleMates. All rights reserved.</p>
+      </div>
+    </section>
+  </footer>
+
+  <!-- End of footer section -->
+
+  <script src="../js/homepage.js" defer></script>
+
+  <script src="../js/scripts.js" defer></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script>
+    function showCaptcha(event) {
+      event.preventDefault();
+
+      const captchaResponse = grecaptcha.getResponse();
+
+      if (captchaResponse.length === 0) {
+        alert("Please complete the captcha");
+        return false;
+      } else {
+        alert("Thank you for sending us a message");
+
+        document.getElementById("contactForm").submit();
+        setTimeout(() => {
+          window.location.href = 'home.html';
+        }, 1000);
+        return true;
+      }
+    }
+  </script>
+</body>
+
+</html>
